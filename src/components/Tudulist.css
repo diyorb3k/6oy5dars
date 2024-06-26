@@ -31,7 +31,11 @@ box-sizing: border-box;
     border-bottom: 2px solid blue;
     padding-left: 33px;
     margin-top: 5px;
+    position: absolute;
+    top: 85%;
+    left: 15%;
   }
+
   .input_tap{
     font-family: sans-serif;
     padding: 10px;
@@ -124,16 +128,25 @@ padding-right: 10px;
   margin-right: 10px;
 }
 .using{
-  display: none;
-  top: 0;
-  transition:0.8s ease;
-  top: -500px;
+  top: 100px !important;
+  margin-top: -600px;
+  transition:0.4s ease !important;
+  top: -500px !important;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  border-radius: 16px;
+  text-align: center;
+  margin-left: 25%;
+  /* margin: 0 auto; */
+  padding: 30px 0;
 
 }
 .using.show{
   display: block;
-  transition: 0.8s ease;
+  transition: 0.4s ease;
   top: 100px;
+  margin-top: 10px;
   
 }
 .sear{

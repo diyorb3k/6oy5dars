@@ -140,7 +140,9 @@ function Tudulist() {
       </form>
       </div>
 
-      {user}
+     <div className="wrapper">
+     {user}
+     </div>
     </div>
   );
   

@@ -18,6 +18,11 @@ box-sizing: border-box;
     justify-content: center;
     margin: 0 auto;
   }
+  .wrapper{
+    position: absolute;
+    top: 85%;
+    left: 20%;
+  }
   .data{
     border-radius:8px 8px 0px 0px;
     font-family: sans-serif;
@@ -30,10 +35,9 @@ box-sizing: border-box;
     margin: 0 auto;
     border-bottom: 2px solid blue;
     padding-left: 33px;
-    margin-top: 5px;
-    position: absolute;
-    top: 85%;
-    left: 15%;
+    margin-bottom: 20px;
+    
+    
   }
 
   .input_tap{

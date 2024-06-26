@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React,{useState} from "react";
 import "./Tudulist.css";
 import PropsImg from "./PropsImg/PropsImg";
 import Notificiatrion from "./Notificiatrion";
@@ -15,7 +15,7 @@ function Tudulist() {
   const [file, setFile] = useState("");
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
-
+ const [show, setSHow]= useState(false)
   const sab = (e) => {
     e.preventDefault();
     if (name && sade && dade && das && dal) {
@@ -77,7 +77,7 @@ function Tudulist() {
   return (
     <div className="container">
       
-      <form>    
+
         <div className="sear">
         <input
           className="search"
@@ -86,11 +86,10 @@ function Tudulist() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-      <button className="addd">Add</button>  
+      <button onClick={()=> setSHow(!show)} className="addd">Add</button>  
         </div>
-      </form>
 
-      <div className="using">
+      <div  className={`using ${show ? "show" : "using"}`}>
       <form prom onSubmit={sab}>
         <input
           className="input_tap"
@@ -144,6 +143,7 @@ function Tudulist() {
       {user}
     </div>
   );
+  
 }
 
 export default Tudulist;

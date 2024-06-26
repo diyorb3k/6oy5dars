@@ -124,7 +124,17 @@ padding-right: 10px;
   margin-right: 10px;
 }
 .using{
-  /* display: none; */
+  display: none;
+  top: 0;
+  transition:0.8s ease;
+  top: -500px;
+
+}
+.using.show{
+  display: block;
+  transition: 0.8s ease;
+  top: 100px;
+  
 }
 .sear{
   max-width: 100%;
@@ -135,6 +145,8 @@ padding-right: 10px;
   text-align: center;
   justify-content: center;
   gap: 5px;
+
+ 
 }
 .addd{
   color: #00ff33;
